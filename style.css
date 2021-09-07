@@ -124,13 +124,20 @@
 /* Esercizio_10 */
 .ex-10-icon {
 	font-size: 60px;
+	animation: spin 1s linear;
 }
+
+@keyframes spin {
+	0% {
+		transform: rotate (1turn);
+	}
+}
+
 /* /Esercizio_10 */
 
 /* Esercizio_11 */
 .ex-11-icon {
 	font-size: 60px;
-	transition: 2s;
 }
 
 .ex-11-icon:hover {
@@ -144,7 +151,33 @@
 /* /Esercizio_12 */
 
 /* Esercizio_13 */
+.ex-13-bottom-white:hover .ex-13-top-white {
+	animation-direction: alternate-reverse;
+	animation: myfirst 2s;
+}
 
+@keyframes myfirst {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	25% {
+		left: calc(100% - 100px);
+		top: 0px;
+	}
+	50% {
+		left: calc(100% - 100px);
+		left: calc(100% - 100px);
+	}
+	75% {
+		left: 0px;
+		left: calc(100% - 100px);
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
 /* /Esercizio_13 */
 
 .ex-12-button,
